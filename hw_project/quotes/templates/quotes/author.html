@@ -1,0 +1,12 @@
+{% extends 'quotes/base.html' %}
+{% block content %}
+
+{% if author %}
+    <h1>{{ author.fullname }}</h1>
+    <p><strong>Date of birth:</strong> {{ author.born_date }} {{ author.born_location }}</p>
+    <p><strong>Description:</strong> {{ author.description }}</p>
+{% else %}
+    <p>Author not found.</p>
+{% endif %}
+
+{% endblock %}
