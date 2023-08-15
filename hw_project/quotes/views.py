@@ -18,5 +18,5 @@ def main(request, page=1):
 
 def author(request, id_):
     db = get_mongodb()
-    author_info = db.authors.find_one({'_id': id_})
+    author_info = db.authors.find_one({'_id': ObjectId(id_)})
     return render(request, 'quotes/author.html', context={'author': author_info})
