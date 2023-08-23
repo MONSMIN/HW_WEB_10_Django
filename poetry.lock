@@ -57,6 +57,16 @@ trio = ["trio (>=0.14,<0.23)"]
 wmi = ["wmi (>=1.5.1,<2.0.0)"]
 
 [[package]]
+name = "environ"
+version = "1.0"
+description = "Stack Based Globals Management"
+optional = false
+python-versions = "*"
+files = [
+    {file = "environ-1.0.tar.gz", hash = "sha256:4df7f1dfeb7d1c988d2e19a8bd5d547a526e0400aeb35adf732032472f35dcb0"},
+]
+
+[[package]]
 name = "psycopg-binary"
 version = "3.1.10"
 description = "PostgreSQL database adapter for Python -- C optimisation distribution"
@@ -333,4 +343,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7444c293132519abf07c9c60573c0581a2ae005df0788d96108c0cc85efaecb5"
+content-hash = "067b78ed089ed9c9dc603a39a61fcc6f84ac8196ccc7a2ce661df2ad00f8c1d2"
